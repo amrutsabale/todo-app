@@ -3,6 +3,7 @@
 <div class="page-header">
   <h1> All Todos</h1>
 </div>
+<hr style= "border-top: 1px solid white;">
 <% @items.each do |item| %>
         <h3><%= item.item %>
         <%= link_to '<i class="fas fa-pencil-alt"></i>'.html_safe, edit_item_path(item) %>
